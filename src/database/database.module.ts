@@ -15,7 +15,7 @@ const config = dotenv.parse(fs.readFileSync('.env'));
         username: config.DB_USER as string,
         password: config.DB_PASSWORD as string,
         database: config.DB_DATABASE as string,
-        entities: ['dist/**/*.entity{.ts,.js}'],
+        entities: ['./dist/**/*.entity{.ts,.js}'],
         synchronize: true,
         migrationsRun: false,
         autoLoadEntities: true,
