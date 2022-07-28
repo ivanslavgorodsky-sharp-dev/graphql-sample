@@ -1,0 +1,32 @@
+// creater user
+mutation {
+     createUser(
+       name:"seconddaaasdasasdaasdassdd",
+       description:"desc2asdasdasdaaasdsdsd",
+       address:"addr2",
+         imageUrl:"imageUrl2",
+       dob:"1986-12-02 00:00:00"){
+     id
+  		name
+     description
+     address
+     imageUrl
+     dob
+   }
+ }
+// list users
+ {
+  getAllUsers(searchText:"",take:2,  skip:0){
+    list{
+      id
+      name
+      description
+      address
+      imageUrl
+      dob
+      createdAt
+      updatedAt
+    }
+    total
+  }
+}
